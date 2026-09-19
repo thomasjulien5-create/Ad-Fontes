@@ -808,3 +808,7 @@ body:has(#view-home.active) .nav-btn small{font-size:clamp(12px,1.8vw,18px) !imp
 .about-heading{align-items:center!important;}
 .about-photo-mini{width:64px!important;height:64px!important;padding:0!important;overflow:hidden!important;border-radius:14px!important;border:1px solid #d8bd8b!important;box-shadow:0 4px 12px rgba(72,48,22,.15)!important;background:#f5ead6!important;flex:0 0 64px!important;}
 .about-photo-mini img{width:100%!important;height:100%!important;display:block!important;object-fit:cover!important;object-position:center center!important;}
+
+/* v40 — portrait de saint Thomas choisi par l'utilisateur */
+#view-home .exact-thomas img{object-fit:cover!important;object-position:center 30%!important;filter:none!important;}
+.meditation-thomas-mini{width:64px!important;height:64px!important;object-fit:cover!important;object-position:center 28%!important;border-radius:14px!important;border:1px solid #d8bd8b!important;box-shadow:0 4px 12px rgba(72,48,22,.15)!important;}
