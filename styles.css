@@ -782,3 +782,22 @@ body:has(#view-home.active) .nav-btn small{font-size:clamp(12px,1.8vw,18px) !imp
 #view-home .about-plain-card .home-about-wordmark{
   background:#f7f0e2!important;inset:34% 10%!important;z-index:3!important;
 }
+
+/* v38 — image Bible choisie par l'utilisateur */
+#view-home .altar-bible-photo img{
+  object-fit:cover!important;
+  object-position:center 48%!important;
+  filter:none!important;
+}
+.bible-photo-mini{
+  width:64px!important;height:64px!important;padding:0!important;
+  overflow:hidden!important;border-radius:14px!important;
+  border:1px solid #d8bd8b!important;
+  box-shadow:0 4px 12px rgba(72,48,22,.15)!important;
+  background:#f5ead6!important;
+  flex:0 0 64px!important;
+}
+.bible-photo-mini img{
+  width:100%!important;height:100%!important;display:block!important;
+  object-fit:cover!important;object-position:center 47%!important;
+}
