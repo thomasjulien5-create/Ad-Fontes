@@ -812,3 +812,38 @@ body:has(#view-home.active) .nav-btn small{font-size:clamp(12px,1.8vw,18px) !imp
 /* v40 — portrait de saint Thomas choisi par l'utilisateur */
 #view-home .exact-thomas img{object-fit:cover!important;object-position:center 30%!important;filter:none!important;}
 .meditation-thomas-mini{width:64px!important;height:64px!important;object-fit:cover!important;object-position:center 28%!important;border-radius:14px!important;border:1px solid #d8bd8b!important;box-shadow:0 4px 12px rgba(72,48,22,.15)!important;}
+
+
+/* v43 — libellés d'accueil : ajustement responsive et harmonisé */
+#view-home .home-tile-label{
+  box-sizing:border-box!important;
+  width:100%!important;
+  min-width:0!important;
+  padding:14px 8px 12px!important;
+  min-height:104px!important;
+  justify-content:flex-start!important;
+  overflow:hidden!important;
+}
+#view-home .home-image-tile .home-tile-label strong{
+  display:block!important;
+  width:100%!important;
+  max-width:100%!important;
+  margin:0 auto!important;
+  padding:0 2px!important;
+  box-sizing:border-box!important;
+  font-size:clamp(13px,3.25vw,19px)!important;
+  line-height:1.16!important;
+  letter-spacing:-.015em!important;
+  text-align:center!important;
+  overflow-wrap:normal!important;
+  word-break:normal!important;
+  hyphens:none!important;
+}
+#view-home .tile-ornament{margin-top:11px!important;}
+@media (max-width:430px){
+  #view-home .home-icon-grid{gap:7px!important;}
+  #view-home .home-tile-label{padding:11px 4px 10px!important;min-height:92px!important;}
+  #view-home .home-image-tile .home-tile-label strong{font-size:clamp(12px,3.45vw,15px)!important;line-height:1.14!important;}
+  #view-home .tile-ornament{margin-top:9px!important;}
+  #view-home .tile-ornament::before,#view-home .tile-ornament::after{width:20px!important;}
+}
