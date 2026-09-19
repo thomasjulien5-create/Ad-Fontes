@@ -1,5 +1,5 @@
-const CACHE='ad-fontes-v37';
-const STATIC=['./','./index.html','./installer/','./installer/index.html','./styles.css?v=37','./app.js?v=37','./meditations.js?v=37','./assets/file_0000000000c082108ce827725e006074.png?v=37','./assets/home-bible.webp?v=37','./assets/home-thomas.webp?v=37','./assets/home-about.webp?v=37','./manifest.webmanifest','./icon.svg'];
+const CACHE='ad-fontes-v38';
+const STATIC=['./','./index.html','./installer/','./installer/index.html','./styles.css?v=38','./app.js?v=38','./meditations.js?v=38','./assets/file_0000000000c082108ce827725e006074.png?v=38','./assets/home-bible.webp?v=38','./assets/home-thomas.webp?v=38','./assets/home-about.webp?v=38','./assets/bible-autel-v38.webp?v=38','./manifest.webmanifest','./icon.svg'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(STATIC)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',e=>{
