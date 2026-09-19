@@ -1,5 +1,5 @@
-const CACHE='ad-fontes-v42';
-const STATIC=['./','./index.html','./installer/','./installer/index.html','./styles.css?v=42','./app.js?v=42','./meditations.js?v=42','./assets/file_0000000000c082108ce827725e006074.png?v=42','./assets/home-bible.webp?v=42','./assets/home-thomas.webp?v=42','./assets/home-about.webp?v=42','./assets/bible-textes-du-jour.png?v=42','./assets/a-propos.png?v=42','./assets/meditation-quotidienne.png?v=42','./manifest.webmanifest','./icon.svg'];
+const CACHE='ad-fontes-v43';
+const STATIC=['./','./index.html','./installer/','./installer/index.html','./styles.css?v=43','./app.js?v=43','./meditations.js?v=43','./assets/file_0000000000c082108ce827725e006074.png?v=43','./assets/home-bible.webp?v=43','./assets/home-thomas.webp?v=43','./assets/home-about.webp?v=43','./assets/bible-textes-du-jour.png?v=43','./assets/a-propos.png?v=43','./assets/meditation-quotidienne.png?v=43','./manifest.webmanifest','./icon.svg'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(STATIC)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',e=>{
